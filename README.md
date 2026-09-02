@@ -1,124 +1,147 @@
-- #include <iostream>
-#include <string>
-using namespace std;
+# 👋 Hi, I'm Sanket More
 
-class student {
-    int roll;
-    string name;
-    float marks;
+### 💻 Computer Engineering Student | Developer | Data & Technology Enthusiast
 
-public:
-    void read(student s[], int n);
-    void in_sort(student s[], int n);
-    void display(student s[], int n);
-    void shell_sort(student s[], int n);
-    int getRoll() const { return roll; }
-    string getName() const { return name; }
-    void setData(int r, const string& n, float m) {
-        roll = r;
-        name = n;
-        marks = m;
-    }
-};
+🎓 Final-year Computer Engineering student passionate about building practical software solutions and learning new technologies.
 
-void student::read(student s[], int n) {
-    for (int i = 0; i < n; i++) {
-        int r;
-        string n;
-        float m;
-        cout << "Enter roll number, name, and marks: ";
-        cin >> r >> n >> m;
-        s[i].setData(r, n, m);
-    }
-}
+I enjoy working with **Data Analytics, Web Development, Databases, Cloud Computing, Machine Learning, and Software Development**.
 
-void student::in_sort(student s[], int n) {
-    for (int i = 1; i < n; i++) {
-        student val = s[i];
-        int j = i - 1;
-        while (j >= 0 && s[j].getRoll() > val.getRoll()) {
-            s[j + 1] = s[j];
-            j--;
-        }
-        s[j + 1] = val;
-    }
-}
+🚀 Currently preparing for **internships and placements** while building projects that strengthen my technical and problem-solving skills.
 
-void student::display(student s[], int n) {
-    for (int i = 0; i < n; i++) {
-        cout << s[i].getRoll() << " " << s[i].getName() << " " << s[i].marks << endl;
-    }
-}
+---
 
-void student::shell_sort(student s[], int n) {
-    for (int gap = n / 2; gap >= 1; gap /= 2) {
-        for (int j = gap; j < n; j++) {
-            for (int i = j - gap; i >= 0; i -= gap) {
-                if (s[i + gap].getName() > s[i].getName()) {
-                    break;
-                } else {
-                    student temp = s[i + gap];
-                    s[i + gap] = s[i];
-                    s[i] = temp;
-                }
-            }
-        }
-    }
-}
+## 🧑‍💻 About Me
 
-int main() {
-    int n;
-    cout << "Enter the number of records: ";
-    cin >> n;
+- 🎓 Final-year **Computer Engineering Student**
+- 💡 Interested in **Software Development, Data Analytics & Cloud Technologies**
+- 📊 Exploring **Data Analytics & Machine Learning**
+- 🌐 Building web applications and practical software projects
+- ☁️ Learning and working with **Cloud Computing & AWS**
+- 🗄️ Interested in **SQL, MongoDB & Database Systems**
+- 🧠 Strengthening **DSA, problem-solving and programming fundamentals**
+- 🚀 Open to **Internships, Projects & Collaboration**
 
-    student s[n], x;
-    int choice;
+---
 
-    do {
-        cout << "1. ENTER RECORD\n2. DISPLAY RECORD\n3. ARRANGE ORDER USING INSERTION SORT\n4. ARRANGE USING SHELL SORT\n5. EXIT" << endl;
-        cout << "Enter the choice: ";
-        cin >> choice;
+## 🛠️ Tech Stack
 
-        switch (choice) {
-            case 1:
-                cout << "Enter record:" << endl;
-                x.read(s, n);
-                break;
+### 👨‍💻 Programming Languages
 
-            case 2:
-                x.display(s, n);
-                break;
+<p>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</p>
 
-            case 3:
-                cout << "After insertion sort:" << endl;
-                x.in_sort(s, n);
-                x.display(s, n);
-                break;
+### 🌐 Web Development
 
-            case 4:
-                cout << "After shell sort:" << endl;
-                x.shell_sort(s, n);
-                x.display(s, n);
-                break;
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
+</p>
 
-            case 5:
-                cout << "EXIT" << endl;
-                break;
+### 📊 Data & Machine Learning
 
-            default:
-                cout << "Invalid choice. Please try again." << endl;
-                break;
-        }
+<p>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+</p>
 
-        if (choice != 5) {
-            cout << "Press 1 to continue or any other key to exit." << endl;
-            int cont;
-            cin >> cont;
-            if (cont != 1) choice = 5;  // Exit loop
-        }
+### ☁️ Cloud & Databases
 
-    } while (choice != 5);
+<p>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
+</p>
 
-    return 0;
-}
+### 🔧 Tools
 
+<p>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+</p>
+
+---
+
+# 🚀 Featured Projects
+
+### 🎓 AI-Based Student Performance Prediction System
+
+A machine learning application that predicts student academic performance using factors such as attendance, study hours, internal marks and examination performance.
+
+**Tech:** Python • Pandas • Scikit-learn • Streamlit
+
+---
+
+### 🔍 Resume Analyzer Bot
+
+A project designed to analyze resumes and provide useful insights based on resume content and relevant skills.
+
+**Tech:** Python • NLP • Data Processing
+
+---
+
+### 🎵 Music Database Management System
+
+A database project designed to manage and query music-related information using SQL and relational database concepts.
+
+**Tech:** SQL • Database Management
+
+---
+
+### 📱 WhatsApp Marketing CSV Tool
+
+A utility project that processes CSV data and helps organize information for WhatsApp-based marketing workflows.
+
+**Tech:** Python • CSV • Data Processing
+
+---
+
+### 💰 Student Daily Expense Tracker
+
+A web-based application for recording and analyzing daily expenses.
+
+Features include:
+
+- 📅 Daily expense tracking
+- 💵 Total daily spending
+- 📊 Category-wise spending analysis
+- 📈 Day-to-day comparison
+
+**Tech:** HTML • CSS • JavaScript
+
+---
+
+### 🔗 LostLink — Distributed Lost & Found Network
+
+A distributed system concept designed to connect multiple campus locations such as laboratories, libraries, departments and security offices.
+
+The system allows different nodes to communicate and discover lost-and-found records across locations.
+
+**Concepts:** Distributed Systems • RPC • Client-Server • Node Communication
+
+---
+
+# 📚 Currently Learning
+
+```text
+Data Structures & Algorithms
+        ↓
+Software Development
+        ↓
+Data Analytics
+        ↓
+Machine Learning
+        ↓
+Cloud Computing
+        ↓
+System & Database Concepts
