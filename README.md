@@ -82,13 +82,7 @@ A machine learning application that predicts student academic performance using 
 
 ---
 
-### 🔍 Resume Analyzer Bot
 
-A project designed to analyze resumes and provide useful insights based on resume content and relevant skills.
-
-**Tech:** Python • NLP • Data Processing
-
----
 
 ### 🎵 Music Database Management System
 
@@ -98,13 +92,7 @@ A database project designed to manage and query music-related information using 
 
 ---
 
-### 📱 WhatsApp Marketing CSV Tool
 
-A utility project that processes CSV data and helps organize information for WhatsApp-based marketing workflows.
-
-**Tech:** Python • CSV • Data Processing
-
----
 
 ### 💰 Student Daily Expense Tracker
 
